@@ -1,9 +1,9 @@
-mowbly
+Mowbly
 ======
 
 http://www.mowbly.com
 
-Open Enterprise Mobility Platform - Cross platform SDK
+Mowbly - Open Enterprise Mobility Platform - Cross platform SDK
 
 Mowbly cross platform mobile runtime SDK is a powerful enterprise app foundation layer available open source for iOS and Android currently. Mowbly APIs, exposed as standard Javascript APIs, used with HTML and CSS help build cross platform apps
 
@@ -32,3 +32,8 @@ Contribute
 ========
 
 If you like to add anything new or update a component, feel free to fork the project and send us a pull request. We are glad for your support :)
+
+License
+=======
+
+Apache License V2 - 2014 - CloudPact Software Technologies Pvt. Ltd.
