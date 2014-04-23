@@ -19,6 +19,9 @@ Mowbly cross platform SDK is divided as separate projects for each OS along side
       |- ios/
       |- js/
       |- samples/
+        |- Photo Journal/ - (Quick app building exercise with Mowbly)
+          |- android/
+          |- ios/
         |- Mowbly Magic/ - (Extensive project covering all features of Mowbly)
           |- android/
           |- ios/
