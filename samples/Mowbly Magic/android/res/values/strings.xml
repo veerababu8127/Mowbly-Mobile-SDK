@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mowbly Magic</string>
+    <!-- App folder name -->
+    <string name="bundle_name">Mowbly Magic</string>
+    <!-- Unique name to identify the home page -->
+    <string name="page_home_name">Mowbly Magic</string>
+    <!-- Home page of the app /appname/htmlfile.html -->
+    <string name="page_home_url">/Mowbly Magic/index.html</string>
+</resources>

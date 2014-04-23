@@ -1,0 +1,13 @@
+.trendlist{margin-top:20px;}
+.trendlist .entry{height:50px;margin:10px auto;position: relative;color: #303030;width: 95%;}
+.trendlist .entry .icon{position:absolute;display:inline-block;width:30px;height:30px;top: 11px;left: 5px;background-repeat:no-repeat;background-position:center center;}
+.trendlist .entry .datetime{position:absolute;display:inline-block;top: 3px;right: 3px;background-repeat:no-repeat;background-position:center center;font-size: 8pt;}
+.trendlist .entry .text{padding-top: 18px;padding-bottom: 20px;padding-left: 40px;font-size: 10pt;}
+
+.happy{background-image: url('../images/happy.png');}
+.fine{background-image: url('../images/fine.png');}
+.sad{background-image: url('../images/sad.png');}
+
+.positive{background-color:#B8FFA4;}
+.neutral{background-color:#F6D448;}
+.negative{background-color:#EA252E;}

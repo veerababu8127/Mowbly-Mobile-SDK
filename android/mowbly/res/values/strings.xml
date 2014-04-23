@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Mowbly</string>
+
+    <!-- Page names and urls -->
+    <string name="page_home_name"></string>
+    <string name="page_home_url"></string>
+    <string name="pnf_url"></string>
+    
+    <!-- SplashActivity Strings -->
+    <string name="splash_activity_mowbly_framework">Launching&#8230;</string>
+
+    <string name="config"></string>
+
+    <string name="gallery">Gallery</string>
+    <string name="loading_progress">Loading&#8230;</string>
+    <string name="error_loading_image">Error loading image</string>
+    
+    <string name="framework_name">Mowbly</string>
+    <string name="framework_version">4.0</string>
+   	<string name="app_description">Enterprise Mobile Platform</string>
+   	<string name="support_email">support@cloudpact.com</string>
+   	<string name="error_email">team@cloudpact.com</string>
+   	
+   	<!-- Intent Request code Strings -->
+   	<string name="action_ACTIVITY_SPLASH">0</string>
+   	<string name="action_CAMERA_TAKE_PICTURE">1</string>
+   	<string name="action_CAMERA_CHOOSE_PICTURE">2</string>
+   	<string name="action_CONTACTS_PICK_CONTACT">3</string>
+   	<string name="action_ACTIVITY_IMAGE_GALLERY">4</string>
+   	
+   	<!-- Intent Strings -->
+   	
+   	<string name="log_level">10000</string>
+
+   	
+</resources>

@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cloudpact.mowbly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- Targeting Android 2.2 and above; compiled with Android 2.3.3 (For camera configuration Api) -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="11" />
+
+    
+
+</manifest>

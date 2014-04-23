@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">mowbly-android-sample</string>
+    <!-- App folder name -->
+    <string name="bundle_name"></string>
+    <!-- Unique name to identify the home page -->
+    <string name="page_home_name"></string>
+    <!-- Home page of the app /appname/htmlfile.html -->
+    <string name="page_home_url"></string>
+</resources>

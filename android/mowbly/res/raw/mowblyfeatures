@@ -1,0 +1,16 @@
+camera=com.cloudpact.mowbly.android.feature.CameraFeature
+contacts=com.cloudpact.mowbly.android.feature.ContactsFeature
+database=com.cloudpact.mowbly.android.feature.DatabaseFeature
+device=com.cloudpact.mowbly.android.feature.DeviceFeature
+file=com.cloudpact.mowbly.android.feature.FileFeature
+framework=com.cloudpact.mowbly.android.feature.FrameworkFeature
+geolocation=com.cloudpact.mowbly.android.feature.GeoLocationFeature
+logger=com.cloudpact.mowbly.android.feature.LogFeature
+message=com.cloudpact.mowbly.android.feature.MessageFeature
+network=com.cloudpact.mowbly.android.feature.NetworkFeature
+page=com.cloudpact.mowbly.android.feature.PageFeature
+preferences=com.cloudpact.mowbly.android.feature.PreferencesFeature
+http=com.cloudpact.mowbly.android.feature.HttpFeature
+ui=com.cloudpact.mowbly.android.feature.UIFeature
+imagegallery=com.cloudpact.mowbly.android.feature.ImageGalleryFeature
+sms=com.cloudpact.mowbly.android.feature.SMSFeature
