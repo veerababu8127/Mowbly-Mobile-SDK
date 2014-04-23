@@ -1,6 +1,10 @@
-# Open Mowbly JS SDK
+Mowbly - Cross platform SDK
+=================
 
-Welcome to the world of Mowbly! To compile, follow the below steps
+JS SDK Layer
+----------
+
+To compile mowbly.js, follow the below steps
 
 1. Install `npm` from http://nodejs.org/download/. - Required to be done only once after pulling the repository
 2. After installing `npm`, from command line, call the below command 
@@ -10,4 +14,5 @@ Welcome to the world of Mowbly! To compile, follow the below steps
 5. Then run `grunt` -  Required to be done only once after pulling the repository
 6. Output will be generated in the `dist` folder
 
-Enjoy your Mowbly!
+
+Use the generated mowbly.js with your project.
