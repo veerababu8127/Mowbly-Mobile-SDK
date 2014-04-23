@@ -9,7 +9,7 @@ Android
 1. Create a project from existing code from the `android` template folder
 2. Overwrite project name and app name
 3. Place your HTML, JS and CSS code for your app under `assets` folder
-4. Update `res/values/strings.xml` with specific values
+4. Update `res/values/strings.xml` with specific values for `app_name`, `bundle_name`, `page_home_name` and `page_home_url`.
 5. Project is ready to run!
 
 
@@ -21,7 +21,7 @@ iOS
 1. Create a project from existing code from the `ios` template folder
 2. Overwrite project name and app name
 3. Place your HTML, JS and CSS code for your app into `project.bundle`
-4. Update `app.plist` with specific values
+4. Update `Mowbly.bundle/Mowbly-info.plist` with specific values for `MBLAppName`, `MBLHomePageName` and `MBLHomePageUrl`
 5. Project is ready to run!
 
 
