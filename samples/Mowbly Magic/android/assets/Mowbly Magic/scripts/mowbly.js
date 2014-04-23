@@ -1,4 +1,4 @@
-/*	mowbly-4.0.0 02-04-2014	*/
+/*	mowbly-4.0.0 09-04-2014	*/
 /*	Mowbly - Enterprise Mobile Applications Framework.	*/
 (function(){
 /* Custom Event Library */
@@ -1294,8 +1294,8 @@ var __m_Utils = {
 			"type": 0,
 			"quality": 100,
 			"readData": false,
-			"width": 320,
-			"height": 480
+			"width": "auto",
+			"height": "auto"
 		},
 
 		getConfigurationForCameraType: function(configuration, cameraType) {
@@ -1433,6 +1433,88 @@ var __m_Utils = {
 	$m.choosePicFromAlbum = function() {
 		getCameraPicture(mowbly.Camera.SOURCE_PHOTO_ALBUM, arguments);
 	}
+	
+	$m.getPic = function() {
+		var options, fp_callback, noOfArgs = arguments.length;
+		if(noOfArgs < 1) {
+			throw new TypeError("The argument fp_callback is required");
+		}
+		if(noOfArgs == 1) {
+			// Should be options or callback
+			var arg0 = arguments[0];
+			__m_Utils.checkType("first argument", arg0, ["object", "function"]);
+			if(typeof arg0 === "object") {
+				options = arg0;
+			} else {
+				fp_callback = arg0;
+			}
+		} else if(noOfArgs == 2) {
+			// Should be options and callback
+			options = arguments[0];
+			__m_Utils.checkType("[0]", options, "object");
+			fp_callback = arguments[1];
+		}
+		$m.getCamConfig(function(r){
+			var message, buttons;
+			var bIsCameraAvailable;
+			if(!options){
+				options = {};
+			}
+			if(r.result.length == 0){
+				buttons = [
+					{"label": options.choosePicLabel ? options.choosePicLabel : "Choose"},
+					{"label": options.cancelLabel ? options.cancelLabel :"Cancel"}
+				];
+				message = options.chooseMessage ? options.chooseMessage : "Tap 'Choose' to select a picture from gallery.";
+				bIsCameraAvailable = false;
+			}
+			else{
+				buttons = [
+					{"label": options.capturePicLabel ? options.capturePicLabel :"Capture"},
+					{"label": options.choosePicLabel ? options.choosePicLabel : "Choose"},
+					{"label": options.cancelLabel ? options.cancelLabel : "Cancel"}
+				];
+				message = options.camMessage ? options.camMessage : "Tap 'Capture' to capture a picture or 'Choose' to select a picture from gallery.";
+				bIsCameraAvailable = true;
+			}
+			var confirmOptions = {
+				"title": options.title ? options.title : "Select Picture",
+				"message": message,
+				"buttons": buttons
+			};
+			var userCancelledError = {
+				"code": -1,
+				"error": {
+					"message": "User cancelled action",
+					"description": "User cancelled action"
+				}
+			};
+			$m.confirm(confirmOptions, 
+				function(index){
+					if(bIsCameraAvailable){
+						if(index === 0) {
+							// Capture Pic
+							$m.capturePic(options, fp_callback);
+						}else if(index === 1) {
+							// Choose Pic
+							$m.choosePic(options, fp_callback);
+						}else{
+							// cancelled
+							fp_callback(userCancelledError);
+						}
+					}else{
+						if(index === 0) {
+							// Choose Pic
+							$m.choosePic(options, fp_callback);
+						}else{
+							// cancelled
+							fp_callback(userCancelledError);
+						}
+					}
+				}
+			);
+		});
+	};
 	
 	// Add event library to features.
 	__m_Utils.inherit(Camera, Observable);
@@ -4101,6 +4183,12 @@ var __m_Utils = {
 			}
 			if(!options.buttonLabel){
 				options.buttonLabel = "Done";
+			}
+			if(!options.loadingMsg){
+				options.loadingMsg = "Loading image...";
+			}
+			if(!options.errorMsg){
+				options.errorMsg = "Error loading image";
 			}
 			Bridge.invoke(ImageGalleryFeatureName, "showAsGallery", [options], callback);
 		}
