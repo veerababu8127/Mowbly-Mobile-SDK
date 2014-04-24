@@ -5,7 +5,7 @@ http://www.mowbly.com
 
 Mowbly - Open Enterprise Mobility Platform - Cross platform SDK
 
-Mowbly cross platform mobile runtime SDK is a powerful enterprise app foundation layer available open source for iOS and Android currently. Mowbly APIs, exposed as standard Javascript APIs, used with HTML and CSS help build cross platform apps
+Mowbly cross platform mobile runtime SDK is an open source, enterprise app foundation layer. It supports iOS, Android, Blackberry & Windows. iOS and Android are currently open sourced, Windows & Blackberry will follow shortly. Mowbly APIs, exposed as standard Javascript APIs, used with HTML and CSS help build cross platform apps
 
 Getting Started
 ==========
