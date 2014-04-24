@@ -36,6 +36,11 @@ Contribute
 
 If you like to add anything new or update a component, feel free to fork the project and send us a pull request. We are glad for your support :)
 
+Issue Tracking
+-----------
+
+File issues on the issue tracker repository - https://github.com/teammowbly/Mowbly-Enterprise-Mobility-Tracker/
+
 License
 =======
 
