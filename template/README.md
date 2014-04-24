@@ -10,7 +10,9 @@ Android
 2. Overwrite project name and app name
 3. Place your HTML, JS and CSS code for your app under `assets` folder
 4. Update `res/values/strings.xml` with specific values for `app_name`, `bundle_name`, `page_home_name` and `page_home_url`.
-5. Project is ready to run!
+5. Import `standalone-mowbly` and `mowbly` library projects to the workspace
+6. Add `standalone-mowbly` as library reference to the project.
+7. Project is ready to run!
 
 
 iOS
