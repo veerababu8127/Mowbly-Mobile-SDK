@@ -10,7 +10,9 @@ Mowbly cross platform mobile runtime SDK is a powerful enterprise app foundation
 Getting Started
 ==========
 
-Get the source by cloning or downloading the repository
+[Mowbly Get Started Guide](http://www.mowbly.com/docs/#/open/getting-started/index.html)
+
+Get the source by cloning or downloading the repository.
 
 Mowbly cross platform SDK is divided as separate projects for each OS along side the core Javascript API library. Below is the folder structure of the repo
 
