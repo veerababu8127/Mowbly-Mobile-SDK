@@ -1,0 +1,47 @@
+{
+    // Installation
+    "DOWNLOADING_SYSTEM" = "Configuring system";
+    "DOWNLOADING_SYSTEM_FAILED" = "Configuring system failed; ";
+    "INSTALLING_SYSTEM" = "Installing system";
+    "INSTALLATION_FAILED" = "Installation failed; ";
+    "UPDATING_SYSTEM" = "Updating system";
+	"UNKNOWN_ERROR" = "Unknown error";
+
+    // Account
+    "ACCOUNT_ALREADY_EXISTS" = "Account already exists";
+    "ACCOUNT_DOES_NOT_EXIST" = "Account does not exist";
+
+    // Framework
+    "ERROR_OPENING_APP" = "Error opening external app";
+    "NO_APP_TO_HANDLE_URL" = "No app found to handle the url";
+
+    // Camera
+    "ACTIVITY_CANCELED" = "Activity cancelled";
+    "CAMERA_NOT_AVAILABLE" = "Camera is not available";
+    "ERROR_READING_PICTURE_DATA" = "Error retrieving picture data";
+	"PHOTO_LIBRARY_NOT_AVAILABLE" = "Photo library is not available";
+
+    // Contacts
+    "PRIVACY_SETTINGS_CONTACTS" = "Permission not granted to access Contacts. Change in Settings -> Privacy -> Contacts";
+
+    // File
+    "DIRECTORY_ALREADY_EXISTS" = "Directory with same name already exists";
+	"DIRECTORY_NOT_FOUND" = "Directory does not exist";
+    "FILE_ALREADY_EXISTS" = "File with same name already exists";
+	"FILE_NOT_FOUND" = "File does not exist";
+
+    // Message
+    "MAIL_CANCELED" = "Mail canceled";
+	"MAIL_SAVED" = "Mail saved";
+	"MAIL_SENT" = "Mail sent";
+	"MAIL_SEND_FAILED" = "Mail send failed";
+	"MAIL_NOT_SENT" = "Mail not sent";
+	"MAIL_NOT_AVAILABLE" = "Mail feature not available";
+	"SMS_NOT_AVAILABLE" = "Sms feature not available";
+
+    // Network
+    "NO_NETWORK" = "No network";
+    "NETWORK_NOT_REACHABLE" = "Not Reachable";
+    "REACHABLE_VIA_WWAN" = "Reachable via WWAN";
+    "REACHABLE_VIA_WIFI" = "Reachable via WiFi";
+}

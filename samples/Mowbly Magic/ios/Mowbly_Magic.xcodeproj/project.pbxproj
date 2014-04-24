@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18069A1D18F6E387004653C5 /* Mowbly.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18069A1C18F6E387004653C5 /* Mowbly.bundle */; };
+		18223DAB18EDBF570002D6EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DAA18EDBF570002D6EB /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DAD18EDBF570002D6EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DAC18EDBF570002D6EB /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DAF18EDBF570002D6EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DAE18EDBF570002D6EB /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DB518EDBF570002D6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18223DB318EDBF570002D6EB /* InfoPlist.strings */; };
+		18223DB718EDBF570002D6EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18223DB618EDBF570002D6EB /* main.m */; };
+		18223DBB18EDBF570002D6EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18223DBA18EDBF570002D6EB /* AppDelegate.m */; };
+		18223DBD18EDBF570002D6EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18223DBC18EDBF570002D6EB /* Images.xcassets */; };
+		18223DC418EDBF570002D6EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DC318EDBF570002D6EB /* XCTest.framework */; };
+		18223DC518EDBF570002D6EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DAA18EDBF570002D6EB /* Foundation.framework */; };
+		18223DC618EDBF570002D6EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DAE18EDBF570002D6EB /* UIKit.framework */; };
+		18223DDF18EDBFA10002D6EB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DDE18EDBFA10002D6EB /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DEF18EDBFE80002D6EB /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE018EDBFE80002D6EB /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF018EDBFE80002D6EB /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE118EDBFE80002D6EB /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF118EDBFE80002D6EB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE218EDBFE80002D6EB /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF218EDBFE80002D6EB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE318EDBFE80002D6EB /* AssetsLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF318EDBFE80002D6EB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE418EDBFE80002D6EB /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF418EDBFE80002D6EB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE518EDBFE80002D6EB /* CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF518EDBFE80002D6EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE618EDBFE80002D6EB /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF618EDBFE80002D6EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE718EDBFE80002D6EB /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF718EDBFE80002D6EB /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE818EDBFE80002D6EB /* libsqlite3.0.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF818EDBFE80002D6EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DE918EDBFE80002D6EB /* MapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DF918EDBFE80002D6EB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DEA18EDBFE80002D6EB /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DFA18EDBFE80002D6EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DEB18EDBFE80002D6EB /* MobileCoreServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DFB18EDBFE80002D6EB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DEC18EDBFE80002D6EB /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DFC18EDBFE80002D6EB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DED18EDBFE80002D6EB /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		18223DFD18EDBFE80002D6EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18223DEE18EDBFE80002D6EB /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1871BDC8190807190063D269 /* Mowbly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1871BDC7190807190063D269 /* Mowbly.framework */; };
+		18E8BDD218EEA6BB00587412 /* project.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18E8BDD118EEA6BB00587412 /* project.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18223DC718EDBF570002D6EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18223D9F18EDBF570002D6EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18223DA618EDBF570002D6EB;
+			remoteInfo = Mowbly_Magic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18069A1C18F6E387004653C5 /* Mowbly.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Mowbly.bundle; sourceTree = "<group>"; };
+		18223DA718EDBF570002D6EB /* Mowbly Magic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mowbly Magic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18223DAA18EDBF570002D6EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18223DAC18EDBF570002D6EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18223DAE18EDBF570002D6EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18223DB218EDBF570002D6EB /* Mowbly_Magic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mowbly_Magic-Info.plist"; sourceTree = "<group>"; };
+		18223DB418EDBF570002D6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18223DB618EDBF570002D6EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18223DB818EDBF570002D6EB /* Mowbly_Magic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mowbly_Magic-Prefix.pch"; sourceTree = "<group>"; };
+		18223DB918EDBF570002D6EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18223DBA18EDBF570002D6EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18223DBC18EDBF570002D6EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18223DC218EDBF570002D6EB /* Mowbly Magic.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mowbly Magic.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18223DC318EDBF570002D6EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18223DDE18EDBFA10002D6EB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		18223DE018EDBFE80002D6EB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		18223DE118EDBFE80002D6EB /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		18223DE218EDBFE80002D6EB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		18223DE318EDBFE80002D6EB /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		18223DE418EDBFE80002D6EB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		18223DE518EDBFE80002D6EB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		18223DE618EDBFE80002D6EB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		18223DE718EDBFE80002D6EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18223DE818EDBFE80002D6EB /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		18223DE918EDBFE80002D6EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		18223DEA18EDBFE80002D6EB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		18223DEB18EDBFE80002D6EB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		18223DEC18EDBFE80002D6EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18223DED18EDBFE80002D6EB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		18223DEE18EDBFE80002D6EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1871BDC7190807190063D269 /* Mowbly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mowbly.framework; sourceTree = "<group>"; };
+		18E8BDD118EEA6BB00587412 /* project.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = project.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18223DA418EDBF570002D6EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18223DEF18EDBFE80002D6EB /* AddressBook.framework in Frameworks */,
+				18223DF018EDBFE80002D6EB /* AddressBookUI.framework in Frameworks */,
+				18223DF118EDBFE80002D6EB /* AdSupport.framework in Frameworks */,
+				18223DF218EDBFE80002D6EB /* AssetsLibrary.framework in Frameworks */,
+				18223DF318EDBFE80002D6EB /* AudioToolbox.framework in Frameworks */,
+				18223DF418EDBFE80002D6EB /* CFNetwork.framework in Frameworks */,
+				18223DF518EDBFE80002D6EB /* CoreFoundation.framework in Frameworks */,
+				18223DF618EDBFE80002D6EB /* CoreLocation.framework in Frameworks */,
+				18223DF718EDBFE80002D6EB /* libsqlite3.0.dylib in Frameworks */,
+				18223DF818EDBFE80002D6EB /* MapKit.framework in Frameworks */,
+				18223DF918EDBFE80002D6EB /* MessageUI.framework in Frameworks */,
+				18223DFA18EDBFE80002D6EB /* MobileCoreServices.framework in Frameworks */,
+				18223DFB18EDBFE80002D6EB /* QuartzCore.framework in Frameworks */,
+				18223DFC18EDBFE80002D6EB /* Social.framework in Frameworks */,
+				18223DFD18EDBFE80002D6EB /* SystemConfiguration.framework in Frameworks */,
+				18223DAD18EDBF570002D6EB /* CoreGraphics.framework in Frameworks */,
+				18223DDF18EDBFA10002D6EB /* Accounts.framework in Frameworks */,
+				18223DAF18EDBF570002D6EB /* UIKit.framework in Frameworks */,
+				1871BDC8190807190063D269 /* Mowbly.framework in Frameworks */,
+				18223DAB18EDBF570002D6EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18223DBF18EDBF570002D6EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18223DC418EDBF570002D6EB /* XCTest.framework in Frameworks */,
+				18223DC618EDBF570002D6EB /* UIKit.framework in Frameworks */,
+				18223DC518EDBF570002D6EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18223D9E18EDBF570002D6EB = {
+			isa = PBXGroup;
+			children = (
+				18223DD918EDBF7B0002D6EB /* Resources */,
+				18223DB018EDBF570002D6EB /* Mowbly_Magic */,
+				18223DA918EDBF570002D6EB /* Frameworks */,
+				18223DA818EDBF570002D6EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18223DA818EDBF570002D6EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18223DA718EDBF570002D6EB /* Mowbly Magic.app */,
+				18223DC218EDBF570002D6EB /* Mowbly Magic.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18223DA918EDBF570002D6EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1871BDC7190807190063D269 /* Mowbly.framework */,
+				18223DE018EDBFE80002D6EB /* AddressBook.framework */,
+				18223DE118EDBFE80002D6EB /* AddressBookUI.framework */,
+				18223DE218EDBFE80002D6EB /* AdSupport.framework */,
+				18223DE318EDBFE80002D6EB /* AssetsLibrary.framework */,
+				18223DE418EDBFE80002D6EB /* AudioToolbox.framework */,
+				18223DE518EDBFE80002D6EB /* CFNetwork.framework */,
+				18223DE618EDBFE80002D6EB /* CoreFoundation.framework */,
+				18223DE718EDBFE80002D6EB /* CoreLocation.framework */,
+				18223DE818EDBFE80002D6EB /* libsqlite3.0.dylib */,
+				18223DE918EDBFE80002D6EB /* MapKit.framework */,
+				18223DEA18EDBFE80002D6EB /* MessageUI.framework */,
+				18223DEB18EDBFE80002D6EB /* MobileCoreServices.framework */,
+				18223DEC18EDBFE80002D6EB /* QuartzCore.framework */,
+				18223DED18EDBFE80002D6EB /* Social.framework */,
+				18223DEE18EDBFE80002D6EB /* SystemConfiguration.framework */,
+				18223DDE18EDBFA10002D6EB /* Accounts.framework */,
+				18223DAA18EDBF570002D6EB /* Foundation.framework */,
+				18223DAC18EDBF570002D6EB /* CoreGraphics.framework */,
+				18223DAE18EDBF570002D6EB /* UIKit.framework */,
+				18223DC318EDBF570002D6EB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18223DB018EDBF570002D6EB /* Mowbly_Magic */ = {
+			isa = PBXGroup;
+			children = (
+				18223DB918EDBF570002D6EB /* AppDelegate.h */,
+				18223DBA18EDBF570002D6EB /* AppDelegate.m */,
+				18223DBC18EDBF570002D6EB /* Images.xcassets */,
+				18223DB118EDBF570002D6EB /* Supporting Files */,
+			);
+			path = Mowbly_Magic;
+			sourceTree = "<group>";
+		};
+		18223DB118EDBF570002D6EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18223DB218EDBF570002D6EB /* Mowbly_Magic-Info.plist */,
+				18223DB318EDBF570002D6EB /* InfoPlist.strings */,
+				18223DB618EDBF570002D6EB /* main.m */,
+				18223DB818EDBF570002D6EB /* Mowbly_Magic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18223DD918EDBF7B0002D6EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18069A1C18F6E387004653C5 /* Mowbly.bundle */,
+				18E8BDD118EEA6BB00587412 /* project.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18223DA618EDBF570002D6EB /* Mowbly_Magic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18223DD318EDBF570002D6EB /* Build configuration list for PBXNativeTarget "Mowbly_Magic" */;
+			buildPhases = (
+				18223DA318EDBF570002D6EB /* Sources */,
+				18223DA418EDBF570002D6EB /* Frameworks */,
+				18223DA518EDBF570002D6EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mowbly_Magic;
+			productName = Mowbly_Magic;
+			productReference = 18223DA718EDBF570002D6EB /* Mowbly Magic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18223DC118EDBF570002D6EB /* Mowbly MagicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18223DD618EDBF570002D6EB /* Build configuration list for PBXNativeTarget "Mowbly MagicTests" */;
+			buildPhases = (
+				18223DBE18EDBF570002D6EB /* Sources */,
+				18223DBF18EDBF570002D6EB /* Frameworks */,
+				18223DC018EDBF570002D6EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18223DC818EDBF570002D6EB /* PBXTargetDependency */,
+			);
+			name = "Mowbly MagicTests";
+			productName = "Mowbly MagicTests";
+			productReference = 18223DC218EDBF570002D6EB /* Mowbly Magic.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18223D9F18EDBF570002D6EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = CloudPact;
+				TargetAttributes = {
+					18223DC118EDBF570002D6EB = {
+						TestTargetID = 18223DA618EDBF570002D6EB;
+					};
+				};
+			};
+			buildConfigurationList = 18223DA218EDBF570002D6EB /* Build configuration list for PBXProject "Mowbly_Magic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18223D9E18EDBF570002D6EB;
+			productRefGroup = 18223DA818EDBF570002D6EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18223DA618EDBF570002D6EB /* Mowbly_Magic */,
+				18223DC118EDBF570002D6EB /* Mowbly MagicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18223DA518EDBF570002D6EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18223DB518EDBF570002D6EB /* InfoPlist.strings in Resources */,
+				18E8BDD218EEA6BB00587412 /* project.bundle in Resources */,
+				18223DBD18EDBF570002D6EB /* Images.xcassets in Resources */,
+				18069A1D18F6E387004653C5 /* Mowbly.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18223DC018EDBF570002D6EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18223DA318EDBF570002D6EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18223DBB18EDBF570002D6EB /* AppDelegate.m in Sources */,
+				18223DB718EDBF570002D6EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18223DBE18EDBF570002D6EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18223DC818EDBF570002D6EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18223DA618EDBF570002D6EB /* Mowbly_Magic */;
+			targetProxy = 18223DC718EDBF570002D6EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18223DB318EDBF570002D6EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18223DB418EDBF570002D6EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18223DD118EDBF570002D6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CloudPact Software Technologies Private Limited (NM37W4R4C7)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = " $(inherited)";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18223DD218EDBF570002D6EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CloudPact Software Technologies Private Limited (NM37W4R4C7)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18223DD418EDBF570002D6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mowbly_Magic/Mowbly_Magic-Prefix.pch";
+				INFOPLIST_FILE = "Mowbly_Magic/Mowbly_Magic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "Mowbly Magic";
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18223DD518EDBF570002D6EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mowbly_Magic/Mowbly_Magic-Prefix.pch";
+				INFOPLIST_FILE = "Mowbly_Magic/Mowbly_Magic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "Mowbly Magic";
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18223DD718EDBF570002D6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mowbly_Magic.app/Mowbly_Magic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mowbly_Magic/Mowbly_Magic-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = " $(inherited)";
+				INFOPLIST_FILE = "Mowbly MagicTests/Mowbly MagicTests-Info.plist";
+				PRODUCT_NAME = "Mowbly Magic";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18223DD818EDBF570002D6EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mowbly_Magic.app/Mowbly_Magic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mowbly_Magic/Mowbly_Magic-Prefix.pch";
+				INFOPLIST_FILE = "Mowbly MagicTests/Mowbly MagicTests-Info.plist";
+				PRODUCT_NAME = "Mowbly Magic";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18223DA218EDBF570002D6EB /* Build configuration list for PBXProject "Mowbly_Magic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18223DD118EDBF570002D6EB /* Debug */,
+				18223DD218EDBF570002D6EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18223DD318EDBF570002D6EB /* Build configuration list for PBXNativeTarget "Mowbly_Magic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18223DD418EDBF570002D6EB /* Debug */,
+				18223DD518EDBF570002D6EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18223DD618EDBF570002D6EB /* Build configuration list for PBXNativeTarget "Mowbly MagicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18223DD718EDBF570002D6EB /* Debug */,
+				18223DD818EDBF570002D6EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18223D9F18EDBF570002D6EB /* Project object */;
+}
