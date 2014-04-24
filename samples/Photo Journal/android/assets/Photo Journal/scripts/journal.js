@@ -7,7 +7,7 @@ $m.onReady(function(){
 
 function onAddPhotoButtonTouch(){
 	$m.getPic(function(response){
-		if(response.code){
+		if(response.code == 1){
 			// Success
 			journal.addPhoto(response.result.path);
 		} else{
