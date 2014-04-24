@@ -4,19 +4,20 @@ GENERAL
 =======
 This folder contains all the necessary project files required to run the application.
 
-SAMPLE STRUCTURE OF FOLDER TO BE FOLLOWED
-=========================================
+###SAMPLE STRUCTURE OF FOLDER TO BE FOLLOWED
 
+```
 Acme
------index.html
------test.html
------scripts
-----------------index.js
-----------------test.js
------css
-----------------index.css
-----------------test.css
------images
-----------------rotate.png
------resources
-----------------license.txt
+|-----index.html
+|-----test.html
+|-----scripts
+       |---------index.js
+       |---------test.js
+|-----css
+       |---------index.css
+       |---------test.css
+|-----images
+       |---------rotate.png
+|-----resources
+       |---------license.txt
+```
