@@ -5,6 +5,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 
+import com.cloudpact.mowbly.log.Logger;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
@@ -23,6 +24,9 @@ public class NetworkService {
     private Context context;
 
     private ConnectivityManager connectivityManager;
+    
+    private static final String TAG = "NetworkService";
+    private static Logger logger = Logger.getLogger();;
 
     @Inject
     public NetworkService(@Named("Application") Context context) {
@@ -38,18 +42,24 @@ public class NetworkService {
 
     public boolean isConnected() {
         boolean isConnected = false;
-        NetworkInfo wifi = getConnectivityManager().getNetworkInfo(ConnectivityManager.TYPE_WIFI);
-        NetworkInfo mobile = getConnectivityManager().getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
-        if ((wifi != null && wifi.isConnected()) || (mobile != null && mobile.isConnected())) {
-            isConnected = true;
-        }
+        if(getActiveNetwork() != 0){
+        	NetworkInfo wifi = getConnectivityManager().getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+        	NetworkInfo mobile = getConnectivityManager().getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+	        if ((wifi != null && wifi.isConnected()) || (mobile != null && mobile.isConnected())) {
+	            isConnected = true;
+	        }
+    	}
         return isConnected;
     }
 
     public int getActiveNetwork() {
         int code = NETWORK_NONE;
-
-        NetworkInfo info = getConnectivityManager().getActiveNetworkInfo();
+        NetworkInfo info = null;
+        try{
+        	 info = getConnectivityManager().getActiveNetworkInfo();
+        }catch(SecurityException e){
+        	logger.error(TAG, "Network permission not provided");
+        }
         if (info != null) {
             int netType = info.getType();
             int subnetType = info.getSubtype();
