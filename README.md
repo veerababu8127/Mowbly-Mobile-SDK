@@ -1,11 +1,18 @@
 Mowbly
 ======
 
-http://www.mowbly.com
-
 Mowbly - Open Enterprise Mobility Platform - Cross platform SDK
 
-Mowbly cross platform mobile runtime SDK is an open source, enterprise app foundation layer. It supports iOS, Android, Blackberry & Windows. iOS and Android are currently open sourced, Windows & Blackberry will follow shortly. Mowbly APIs, exposed as standard Javascript APIs, used with HTML and CSS help build cross platform apps
+Mowbly mobile SDK is an open source, enterprise mobile app foundation layer. The primary objective of Mowbly is to keep focus on enterprise features alone. Mowbly APIs are exposed as standard Javascript APIs which are used with HTML and CSS to build cross platform apps. It has been built to fit into the larger goal of creating a single stack enterprise mobility platform (SDK, UI, Studio, Simulator, Management, Monitoring, Analytics, Backend & Remote Support). For more details see http://www.mowbly.com
+
+Supported OS and status: 
+
+1. iOS - released,
+2. Android - released, 
+3. Blackberry - pending release - 10th May 2014
+4. Windows - pending release - 20th May 2014
+5. Firefox - pending release - 15th June 2014
+
 
 Getting Started
 ==========
@@ -24,7 +31,7 @@ Mowbly cross platform SDK is divided as separate projects for each OS along side
         |- Photo Journal/ - (Quick app building exercise with Mowbly)
           |- android/
           |- ios/
-        |- Mowbly Magic/ - (Extensive project covering all features of Mowbly)
+        |- Mowbly Magic/ - (Extensive project covering most features of Mowbly)
           |- android/
           |- ios/
       |- template/ - (Scaffold project setup for each OS)
