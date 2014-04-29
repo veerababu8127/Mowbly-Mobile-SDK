@@ -7,7 +7,7 @@ Mowbly mobile SDK is an open source, enterprise mobile app foundation layer. The
 
 It has been built to fit into the larger goal of creating a single stack enterprise mobility platform (SDK, UI, Studio, Simulator, Management, Monitoring, Analytics, Backend & Remote Support). 
 
-For more details see http://www.mowbly.com
+For more details see http://www.mowbly.com/#/page-features
 
 Roadmap
 ========
