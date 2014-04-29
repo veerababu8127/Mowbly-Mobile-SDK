@@ -45,130 +45,112 @@ Features/API List
 (for details see http://www.mowbly.com/docs/)
 
 | Feature Group | API           |
-| ------------- |:-------------:|
+| ------------- |-------------|
 | Page Management   |               |
 |                   | open          |
+|                   | setResult     |
+|                   | close         |
+|                   | pageName      |
+|                   | parentPage    |
+|                   | onReady       |
+|                   | onResume      |
+|                   | onData        |
+|                   | onResult      |
+|                   | onPause       |
+|                   | onClose       |
+|                   | onForeground  |
+|                   | onBackground  |
 |                   | open          |
 |                   | open          |
-|                   | open          |
-|                   | open          |
-|                   | open          |
-1. 
-    a. open
-    b. setResult
-    c. close
-    d. pageName
-    e. parentPage
-    f. onReady
-    g. onResume
-    h. onData
-    i. onResult
-    j. onPause
-    k. onClose
-    l. onForeground
-    m. onBackground
-
-Utility
-    alert
-    toast
-    confirm
-    getPref
-    putPref
-    savePref
-    removePref
-    removeAllPref
-    showProgress
-    hideProgress
-
-File
-    file
-        - create
-        - exists
-        - getPath
-        - read
-        - remove
-        - write
-    
-    directory
-        - create
-        - exists
-        - getFiles
-        - getPath
-        - remove
-
-    getFilePath
-    fileExists
-    readFile
-    writeFile
-    deleteFile
-    appendFile
-    unzipFile
-
-Database
-    openDatabase
-
-Network
-    getNetwork
-    networkConnected
-    isHostReachable
-    onNetworkConnect
-    onNetworkDisconnect
-
-Http
-    get
-    download
-    post
-    httpRequest
-
-Message
-    email
-    sms
-    sendBgSms
-
-Device
-    getDeviceId
-    getMemStat
-    isAndroid
-    isBlackBerry
-    isBlackBerry10
-    isIPad
-    isIOS
-    isIPhone
-    isWeb
-    isWindowsPhone
-    onAndroid
-    onBlackBerry
-    onBlackBerry10
-    onIPad
-    onIOS
-    onIPhone
-    onWeb
-    onWindowsPhone
-
-Camera
-    getCamConfig
-    camSetup
-    capturePic
-    choosePic
-    showAsGallery
-
-Contacts
-    contact
-    findContact
-    pickContact
-    callContact
-
-Location
-    getLocation
-    Logging
-    logDebug
-    logError
-    logFatal
-    logInfo
-    logWarn
-
-Misc
-    bridgeVersion
+| Utility           |               |
+|                   | alert         |
+|                   | toast         |
+|                   | confirm       |
+|                   | getPref       |
+|                   | putPref       |
+|                   | savePref      |
+|                   | removePref    |
+|                   | removeAllPref |
+|                   | showProgress  |
+|                   | hideProgress  |
+| File              |               |
+|                   | file          |
+|                   |    - create   |
+|                   |    - exists   |
+|                   |    - getPath  |
+|                   |    - read     |
+|                   |    - remove   |
+|                   |    - write    |
+|                   | directory     |
+|                   |    - create   |
+|                   |    - exists   |
+|                   |    - getFiles |
+|                   |    - getPath  |
+|                   |    - remove   |
+|                   | getFilePath   |
+|                   | fileExists    |
+|                   | readFile      |
+|                   | writeFile     |
+|                   | deleteFile    |
+|                   | appendFile    |
+|                   | unzipFile     |
+| Database          |               |
+|                   | openDatabase  |
+| Network           |               |
+|                   | getNetwork    |
+|                   | networkConnected  |
+|                   | isHostReachable   |
+|                   | onNetworkConnect  |
+|                   | onNetworkDisconnect   |
+| Http              |               |
+|                   | get           |
+|                   | download      |
+|                   | post          |
+|                   | httpRequest   |
+| Message           |               |
+|                   | email         |
+|                   | sms           |
+|                   | sendBgSms     |
+| Device            |               |
+|                   | getDeviceId   |
+|                   | getMemStat    |
+|                   | isAndroid     |
+|                   | isBlackBerry  |
+|                   | isBlackBerry10    |
+|                   | isIPad        |
+|                   | isIOS         |
+|                   | isIPhone      |
+|                   | isWeb         |
+|                   | isWindowsPhone    |
+|                   | onAndroid     |
+|                   | onBlackBerry  |
+|                   | onBlackBerry10    |
+|                   | onIPad        |
+|                   | onIOS         |
+|                   | onIPhone      |
+|                   | onWeb         |
+|                   | onWindowsPhone    |
+| Camera            |               |
+|                   | getCamConfig  |
+|                   | camSetup      |
+|                   | capturePic    |
+|                   | choosePic     |
+|                   | showAsGallery |
+| Contacts          |               |
+|                   | contact       |
+|                   | findContact   |
+|                   | pickContact   |
+|                   | callContact   |
+|                   | location      |
+|                   | getLocation   |
+| Logging           |               |
+|                   | logDebug      |
+|                   | logError      |
+|                   | logFatal      |
+|                   | logInfo       |
+|                   | logWarn       |
+| Misc              |               |
+|                   | bridgeVersion |
 
 
 Contribute
