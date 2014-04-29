@@ -5,16 +5,18 @@ Mowbly - Open Enterprise Mobility Platform - Cross platform SDK
 
 Mowbly mobile SDK is an open source, enterprise mobile app foundation layer. The primary objective of Mowbly is to keep focus on enterprise features alone. Mowbly APIs are exposed as standard Javascript APIs which are used with HTML and CSS to build cross platform apps. 
 
-It has been built to fit into the larger goal of creating a single stack enterprise mobility platform (SDK, UI, Studio, Simulator, Management, Monitoring, Analytics, Backend & Remote Support). For more details see http://www.mowbly.com
+It has been built to fit into the larger goal of creating a single stack enterprise mobility platform (SDK, UI, Studio, Simulator, Management, Monitoring, Analytics, Backend & Remote Support). 
 
-Supported OS and status: 
+For more details see http://www.mowbly.com
+
+Roadmap
+========
 
 1. iOS - released,
 2. Android - released, 
 3. Blackberry - pending release - 10th May 2014
 4. Windows - pending release - 20th May 2014
 5. Firefox - pending release - 15th June 2014
-
 
 Getting Started
 ==========
