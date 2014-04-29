@@ -120,7 +120,6 @@ Features/API List
 |                   | getMemStat    |
 |                   | isAndroid     |
 |                   | isBlackBerry  |
-|                   | isBlackBerry10    |
 |                   | isIPad        |
 |                   | isIOS         |
 |                   | isIPhone      |
@@ -128,7 +127,6 @@ Features/API List
 |                   | isWindowsPhone    |
 |                   | onAndroid     |
 |                   | onBlackBerry  |
-|                   | onBlackBerry10    |
 |                   | onIPad        |
 |                   | onIOS         |
 |                   | onIPhone      |
