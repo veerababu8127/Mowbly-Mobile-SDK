@@ -1,0 +1,6 @@
+body{margin:0;font-family:"HelveticaNeue-Light", "Droid Sans Mono", "Arial";text-align:center;}
+.mood{display:inline-block;text-align:center;margin-top: 20px;width:80%;padding-top:13px;padding-bottom:12px;color:#303030;}
+.prevMood {margin-top: 20px;padding:0 10px;font-size:10pt;}
+#positiveMood{background-color:#B8FFA4;}
+#neutralMood{background-color:#F6D448;}
+#negativeMood{background-color:#EA252E;}

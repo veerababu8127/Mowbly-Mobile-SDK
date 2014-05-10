@@ -1,0 +1,23 @@
+body{margin:0;font-family:"HelveticaNeue-Light", "Droid Sans Mono", "Arial";background-size:cover;}
+.container{display: inline-block;position: absolute;top: 40px;left: 0;right: 0;bottom: 0;}
+.wrap{display: table;width: 100%;height: 100%;text-align: center;}
+.ball{display: table-cell; vertical-align: middle; }
+.cball{width:100%;}
+.cball img{position:absolute;top:25%;left:0;width:100%;}
+.ball label{font-size:14pt;font-family:Verdana, Helvetica, Arial;}
+
+.logo{text-align:center;}
+.logo img{width:85%;}
+
+.infobar{position:relative;text-align:right;height:50px;}
+.infobar button{background-color:#8ED9D9;border:0;border-radius:2px;width:30px;height:30px;margin:3px 3px 0 0;color:#606060;background-repeat:no-repeat;background-position:center center;}
+#track{background-image:url('../images/track.png');}
+#trend{background-image:url('../images/trend.png');}
+#info{background-image:url('../images/info.png');}
+#share{background-image:url('../images/share.png');}
+#profile{background-image:url('../images/profile.png');}
+#clearTrend{background-image:url('../images/remove.png');}
+#back{position:absolute;top:0;left:3px;background-image:url('../images/back.png');}
+
+.vbbar{margin-top:20px;}
+.vbbar button{display:inline-block;min-height:50px;width:80%;margin-top:10px;border:0;border-radius:2px;color:#303030;font-size:12pt;background-color:#8ED9D9;}

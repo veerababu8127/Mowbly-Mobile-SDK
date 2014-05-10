@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Photo Journal</string>
+    <!-- App folder name -->
+    <string name="bundle_name">Photo Journal</string>
+    <!-- Unique name to identify the home page -->
+    <string name="page_home_name">Photo Journal</string>
+    <!-- Home page of the app /appname/htmlfile.html -->
+    <string name="page_home_url">/Photo Journal/index.html</string>
+</resources>

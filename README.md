@@ -14,7 +14,7 @@ Roadmap
 
 1. iOS - released,
 2. Android - released, 
-3. Blackberry - pending release - 10th May 2014
+3. Blackberry - released
 4. Windows - pending release - 20th May 2014
 5. Firefox - pending release - 15th June 2014
 
@@ -29,17 +29,21 @@ Mowbly cross platform SDK is divided as separate projects for each OS along side
 
     mowbly
       |- android/
+      |- blackberry/
       |- ios/
       |- js/
       |- samples/
         |- Photo Journal/ - (Quick app building exercise with Mowbly)
           |- android/
           |- ios/
+          |- blackberry/
         |- Mowbly Magic/ - (Extensive project covering most features of Mowbly)
           |- android/
+          |- blackberry/
           |- ios/
       |- template/ - (Scaffold project setup for each OS)
         |- android/
+        |- blackberry/
         |- ios/
 
 Additionally each folder has a readme for specific information related to it.

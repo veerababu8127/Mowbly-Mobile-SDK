@@ -1,0 +1,5 @@
+body{text-align:center;}
+.infopanel{margin-top:20px;width: 85%;text-align: center;display: inline-block;background:#303030;background: rgba(48,48,48,0.7);border:1px solid rgba(204,204,204,0.7);max-width: 500px;}
+.infopanel .title{margin-top:10px;font-size:18pt;color: #ffffff;}
+.infopanel .entry{margin:10px auto;color: #ffffff;width: 85%;text-align:left;}
+.infopanel .entry .text{padding-top: 18px;padding-bottom: 20px;font-size: 10pt;}
