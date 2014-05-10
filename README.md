@@ -12,9 +12,9 @@ For more details see http://www.mowbly.com/#/page-features
 Roadmap
 ========
 
-1. iOS - released,
-2. Android - released, 
-3. Blackberry - released
+1. iOS - released - 23 April 2014
+2. Android - released - 23 April 2014
+3. Blackberry - released - 10 May 2014
 4. Windows - pending release - 20th May 2014
 5. Firefox - pending release - 15th June 2014
 
