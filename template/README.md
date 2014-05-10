@@ -30,7 +30,7 @@ BlackBerry
 7. In Eclipse, right click, `BlackBerry Tools` > `Add BlackBerry Nature to Project`.
 8. Project is ready to run!
 
-Tip - Follow the steps at BlackBerry documentation [http://developer.blackberry.com/android/documentation/test_your_app_1985225_11.html] to test/debug the project
+Tip - Follow the steps at [BlackBerry documentation] (http://developer.blackberry.com/android/documentation/test_your_app_1985225_11.html) to test/debug the project
 
 
 iOS
