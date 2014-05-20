@@ -31,20 +31,24 @@ Mowbly cross platform SDK is divided as separate projects for each OS along side
       |- android/
       |- blackberry/
       |- ios/
+      |- windowsphone/
       |- js/
       |- samples/
         |- Photo Journal/ - (Quick app building exercise with Mowbly)
           |- android/
           |- ios/
           |- blackberry/
+          |- windowsphone/
         |- Mowbly Magic/ - (Extensive project covering most features of Mowbly)
           |- android/
           |- blackberry/
           |- ios/
+          |- windowsphone/
       |- template/ - (Scaffold project setup for each OS)
         |- android/
         |- blackberry/
         |- ios/
+        |- windowsphone/
 
 Additionally each folder has a readme for specific information related to it.
 
