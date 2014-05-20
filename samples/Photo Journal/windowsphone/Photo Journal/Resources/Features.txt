@@ -1,0 +1,14 @@
+﻿camera=CloudPact.MowblyFramework.Core.Features.Camera
+contacts=CloudPact.MowblyFramework.Core.Features.Contacts
+database=CloudPact.MowblyFramework.Core.Features.Database
+device=CloudPact.MowblyFramework.Core.Features.Device
+file=CloudPact.MowblyFramework.Core.Features.File
+framework=CloudPact.MowblyFramework.Core.Features.Framework
+geolocation=CloudPact.MowblyFramework.Core.Features.GeoLocation
+http=CloudPact.MowblyFramework.Core.Features.Http
+logger=CloudPact.MowblyFramework.Core.Features.Log
+message=CloudPact.MowblyFramework.Core.Features.Message
+network=CloudPact.MowblyFramework.Core.Features.Network
+preferences=CloudPact.MowblyFramework.Core.Features.Preferences
+ui=CloudPact.MowblyFramework.Core.Features.Ui
+imagegallery=CloudPact.MowblyFramework.Core.Features.ImageGallery 

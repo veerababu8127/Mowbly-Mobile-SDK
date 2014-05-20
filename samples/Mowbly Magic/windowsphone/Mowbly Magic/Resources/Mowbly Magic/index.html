@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0" />
+		<meta http-equiv="x-rim-auto-match" content="none" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<!-- Add your stylesheets here -->
+		<link rel="stylesheet" type="text/css" href="css/magic.css"></link>
+		<!-- Add your scripts here -->
+		<script src="scripts/mowbly.js"></script>
+		<script src="scripts/predictions.js"></script>
+		<script src="scripts/magic.js"></script>
+	</head>
+	<body>
+	<div class="infobar">
+		<button id="track" onclick="showTrack()"></button>
+		<button id="trend" onclick="showTrend()"></button>
+		<button id="info" onclick="showInfo()"></button>
+		<button id="share" onclick="showShare()"></button>
+		<button id="profile" onclick="showProfile()"></button>
+	</div>
+	<div class="logo">
+		<img src="images/magic.png"/>
+	</div>
+	<div class="container">
+		<div class="wrap">
+		    <div class="ball">
+		        <div class="cball">
+		        <label id="msg"></label>
+		            <img src="images/base.png"/>
+		            <img id="aball" src="images/ball-green.png"/>
+		            <img id="cball" src="images/ball.png" onclick="showFortune()"/>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	</body>
+</html>

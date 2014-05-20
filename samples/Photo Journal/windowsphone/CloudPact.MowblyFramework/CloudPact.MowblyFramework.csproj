@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8AB59B8-16E9-4A31-B8D8-17FFC985AE08}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudPact.MowblyFramework</RootNamespace>
+    <AssemblyName>CloudPact.MowblyFramework</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <CodeAnalysisAdditionalOptions>/assemblycomparemode:StrongNameIgnoringVersion</CodeAnalysisAdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Core\Controls\ProgressOverlay.cs" />
+    <Compile Include="Core\Features\Camera\Camera.cs" />
+    <Compile Include="Core\Features\Camera\CameraTask.cs" />
+    <Compile Include="Core\Features\Contacts\Contacts.cs" />
+    <Compile Include="Core\Features\Contacts\W3Contact.cs" />
+    <Compile Include="Core\Features\Database.cs" />
+    <Compile Include="Core\Features\File.cs" />
+    <Compile Include="Core\Features\Framework.cs" />
+    <Compile Include="Core\Features\GeoLocation.cs" />
+    <Compile Include="Core\Features\Http.cs" />
+    <Compile Include="Core\Features\ImageGallery.cs" />
+    <Compile Include="Core\Features\Log.cs" />
+    <Compile Include="Core\Features\Message.cs" />
+    <Compile Include="Core\Features\MethodResult.cs" />
+    <Compile Include="Core\Features\Preferences.cs" />
+    <Compile Include="Core\Features\Ui.cs" />
+    <Compile Include="Core\Log\Format\ConsoleFormatter.cs" />
+    <Compile Include="Core\Log\Format\DatabaseFormatter.cs" />
+    <Compile Include="Core\Log\Format\JsonFormatter.cs" />
+    <Compile Include="Core\Log\Handler\DatabaseLogHandler.cs" />
+    <Compile Include="Core\Log\Handler\RotatingFileHandler.cs" />
+    <Compile Include="Core\Log\LogEvent.cs" />
+    <Compile Include="Core\Log\LogLevel.cs" />
+    <Compile Include="Core\Managers\BackgroundHttpRequestManager.cs" />
+    <Compile Include="Core\Managers\BackgroundTasksManager.cs" />
+    <Compile Include="Core\Managers\ForegroundTasksManager.cs" />
+    <Compile Include="Core\Managers\DeviceManager.cs" />
+    <Compile Include="Core\Managers\IBackgroundTaskManager.cs" />
+    <Compile Include="Core\Managers\IFileManager.cs" />
+    <Compile Include="Core\Managers\IForegroundTasksManager.cs" />
+    <Compile Include="Core\Managers\MowblyClientManager.cs" />
+    <Compile Include="Core\Managers\NetworkManager.cs" />
+    <Compile Include="Core\Managers\PageManager.cs" />
+    <Compile Include="Core\Mowbly.cs" />
+    <Compile Include="Core\Log\AbstractLogger.cs" />
+    <Compile Include="Core\Log\Format\ILogFormatter.cs" />
+    <Compile Include="Core\Log\Format\SimpleFormatter.cs" />
+    <Compile Include="Core\Log\Handler\AbstractLogHandler.cs" />
+    <Compile Include="Core\Log\Handler\ConsoleLogHandler.cs" />
+    <Compile Include="Core\Log\Handler\FileLogHandler.cs" />
+    <Compile Include="Core\Log\ILogger.cs" />
+    <Compile Include="Core\Log\Handler\ILogHandler.cs" />
+    <Compile Include="Core\Log\Logger.cs" />
+    <Compile Include="Core\Log\LogPriority.cs" />
+    <Compile Include="Core\Managers\FileManager.cs" />
+    <Compile Include="Core\Managers\LoggerManager.cs" />
+    <Compile Include="Core\Managers\PreferencesManager.cs" />
+    <Compile Include="Core\Ui\IMowblyPhoneApplicationPage.cs" />
+    <Compile Include="Core\Ui\PageModel.cs" />
+    <Compile Include="Core\Ui\UiDispatcher.cs" />
+    <Compile Include="Core\Utils\Contacts\ContactChooserPage.xaml.cs">
+      <DependentUpon>ContactChooserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utils\Contacts\ContactChooserTask.cs" />
+    <Compile Include="Core\Utils\Contacts\ContactDetail.cs" />
+    <Compile Include="Core\Utils\Contacts\ContactDetailsPage.xaml.cs">
+      <DependentUpon>ContactDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utils\Contacts\ContactsGroup.cs" />
+    <Compile Include="Core\Utils\Contacts\ContactViewerTask.cs" />
+    <Compile Include="Core\Utils\Contacts\ContactWithImage.cs" />
+    <Compile Include="Core\Utils\ImageGallery\ImageGalleryViewer.cs" />
+    <Compile Include="Core\Utils\ImageGallery\ImageGalleryViewer.xaml.cs">
+      <DependentUpon>ImageGalleryViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utils\TaskProgress.cs" />
+    <Compile Include="Core\Utils\Utils.cs" />
+    <Compile Include="Core\Features\Device.cs" />
+    <Compile Include="Core\Features\Feature.cs" />
+    <Compile Include="Core\Features\FeatureBinder.cs" />
+    <Compile Include="Core\Features\Network.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThirdParty\SharpGIS.UnZipper.cs" />
+    <Compile Include="Core\Features\JSBridge.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Toolkit.Controls, Version=2.0.7.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.0.7\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll</HintPath>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="ExifLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdParty\lib\ExifLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Phone, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Client.Phone.Auth.UI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Client.Phone.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.18\lib\sl4-windowsphone71\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.18\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.18\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Win7Sqlite">
+      <HintPath>ThirdParty\lib\Win7Sqlite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Core\Utils\Contacts\ContactChooserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Core\Utils\Contacts\ContactDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Core\Utils\ImageGallery\ImageGalleryViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

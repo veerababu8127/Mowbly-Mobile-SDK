@@ -1,0 +1,86 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="CloudPact.MowblyFramework.Core.Utils.ContactChooserPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="ContactsGroupHeaderTemplate">
+            <Border Width="72" Height="72" HorizontalAlignment="Left" 
+                    Background="Red" Margin="6">
+                <TextBlock Text="{Binding Title}"
+                   FontSize="40" Padding="6"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   Foreground="{StaticResource PhoneForegroundBrush}" />
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="ContactItemTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Image}"  Width = "64" Height= "50" Margin="0,0,10,0"/>
+                <TextBlock Text="{Binding DisplayName}" 
+                           FontSize="40" Padding="6"
+                           Style="{StaticResource PhoneTextSubtleStyle}"  />
+            </StackPanel>
+        </DataTemplate>
+        <Style x:Key="LongListSelectorJumpListStyle" TargetType="phone:LongListSelector">
+            <Setter Property="GridCellSize"  Value="113,113"/>
+            <Setter Property="LayoutMode" Value="Grid" />
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Border Background="Red"
+                                        Width="113" Height="113" Margin="6" >
+                            <TextBlock Text="{Binding Title}"
+                                               FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                                               FontSize="48" Padding="6"
+                                               Foreground="{StaticResource PhoneForegroundBrush }"
+                                               VerticalAlignment="Center"/>
+                        </Border>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel-->
+        <StackPanel Grid.Row="0" Margin="10">
+            <TextBlock Text="Contacts" Margin="9,-10,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <StackPanel Grid.Row="0" Margin="10" >
+                <TextBox x:Name="SearchInput" Text="Type to search..." 
+                            KeyUp="SearchInput_KeyUp" />
+            </StackPanel>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <phone:LongListSelector x:Name="ContactsList"
+                    IsGroupingEnabled="True" LayoutMode="List" HideEmptyGroups="False"
+                    ItemTemplate="{StaticResource ContactItemTemplate}"
+                    GroupHeaderTemplate="{StaticResource ContactsGroupHeaderTemplate}"
+                    JumpListStyle="{StaticResource LongListSelectorJumpListStyle}"                    
+                    Margin="1,0,-1,0"
+                    SelectionChanged="ContactsList_SelectionChanged"/>
+        </Grid>
+    </Grid>
+
+    <shell:SystemTray.ProgressIndicator>
+        <shell:ProgressIndicator x:Name="ProgressIndicator" IsIndeterminate="true" IsVisible="True" Text="Loading contacts..." />
+    </shell:SystemTray.ProgressIndicator>
+
+</phone:PhoneApplicationPage>

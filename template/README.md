@@ -45,3 +45,19 @@ iOS
 5. Project is ready to run!
 
 
+Windows Phone
+---------------
+
+
+###Usage
+
+1. Create a project from existing code from the `windowsphone` template folder.
+2. Overwrite project name and app name in `WMAppManifest.xml`.
+3. Place your HTML, JS and CSS code for your app into `Resources/<--Your App name-->`
+4. Update `Resources/Properties.resx` with the values of `TITLE_HOME_PAGE`, `URL_HOME_PAGE`, `URL_PAGE_NOT_FOUND`.
+5. Project is ready to run!
+
+
+
+
+
